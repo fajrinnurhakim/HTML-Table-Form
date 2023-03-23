@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="heaviestbirds.html">HaviestBird</a></li>
+                <li><a href="exercise.html">exercise</a></li>
+                <li><a href="forms.html">Form</a></li>
+                <li><a href="forms_register.html">Form Register</a></li>
+                <li><a href="race_registration.html">Race Registration</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Forms Demo</h1>
+        <form action="/tacos">
+            <p>
+                <label for="username">username</label>
+                <input id="username" type="text" placeholder="username">
+            <p>
+                <label for="password">password</label>
+                <input id="password" type="password" placeholder="password">
+            </p>
+            <p>
+                <label for="color">color</label>
+                <input id="color" type="color">
+            </p>
+            <p>
+                <label for="number">number</label>
+                <input id="number" type="number" placeholder="number">
+            </p>
+            <p>
+                <label for="time">time</label>
+                <input id="time" type="time" placeholder="time">
+            </p>
+            <input type="submit" value="click me">
+            <button type="submit">submit</button>
+        </form>
+        <br>
+        <h1>hijacking searcing</h1>
+        <hr>
+        <h3>search google</h3>
+        <form action="https:/www.google.com/search">
+            <input type="text" name="query">
+            <button>search google</button>
+        </form>
+        <h3>search youtube</h3>
+        <form action="https:/www.youtube.com/search">
+            <input type="text" name="search_query">
+            <button>search youtube</button>
+        </form>
+        <br>
+        <h1>more Input</h1>
+        <hr>
+        <form action="/bird">
+
+            <h3>checkbox</h3>
+            <p>
+                <input type="checkbox" name="agree_tos" id="agree">
+                <label for="agree">Agree for everythings</label>
+                <label for="xs">XS</label>
+            </p>
+            <h3>radio</h3>
+            <p>
+                <input type="radio" name="size" id="xs" value="xs">
+                <label for="s">S</label>
+                <input type="radio" name="size" id="s" value="s">
+                <label for="m">M</label>
+                <input type="radio" name="size" id="m" value="m">
+                <label for="l">L</label>
+                <input type="radio" name="size" id="l" value="l">
+            </p>
+            <h3>Select Option</h3>
+            <p>
+                <label for="meal">Please select a meal type</label>
+                <select name="meal" id="meal">
+                    <option value="fish">fish</option>
+                    <option value="vegetable">vegetable</option>
+                    <option value="steak">steak</option>
+                </select>
+            </p>
+            <h3>range</h3>
+            <p>
+                <label for="cheese"> amount of cheese :</label>
+                <input type="range" id="cheese" name="cheese" min="0" step="5" max="10">
+            </p>
+            <button>Submit</button>
+            <p>
+                <label for="request">any request?</label>
+                <textarea name="request" id="" cols="30" rows="5"></textarea>
+            </p>
+        </form>
+        <br>
+        <h1>Validations Demo</h1>
+        <hr>
+        <form action="validation">
+            <p>
+                <label for="first">Enter First Name</label>
+                <input type="text" name="first" id="first" required>
+            </p>
+            <p>
+                <label for="username">Enter Username</label>
+                <input type="text" name="username" id="username" minlength="5" maxlength="10" required>
+            </p>
+            <p>
+                <label for="password">Enter Password</label>
+                <input type="password" name="password" id="password" minlength="8" maxlength="13" required>
+            </p>
+            <button>Submit</button>
+        </form>
+
+    </main>
+</body>
+
+</html>
